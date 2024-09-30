@@ -21,6 +21,9 @@ fi
 # valgrind
 sudo apt-get install -y valgrind
 
+# boost
+sudo apt-get install -y libboost-all
+
 sudo apt install -y nodejs
 
 # debugging option
