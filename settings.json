@@ -1,0 +1,284 @@
+{
+    "cmake.launchBehavior": "reuseTerminal",
+    "C_Cpp.intelliSenseEngineFallback": "disabled",
+    "C_Cpp.default.intelliSenseMode": "linux-clang-x64",
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
+    "C_Cpp.default.compilerPath": "/usr/bin/clang++-20",
+    "files.associations": {
+        "*.lxx": "cpp",
+        "*.pxx": "cpp",
+        "*.gxx": "cpp",
+        "*.hxx": "cpp",
+        "*.cxx": "cpp",
+        "*.h": "cpp",
+        "*.c": "cpp",
+    },
+    "cmake.automaticReconfigure": false,
+    "cmake.autoSelectActiveFolder": true,
+    "cmake.buildBeforeRun": false,
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.parallelJobs": 8,
+    "cmake.generator": "Ninja",
+    "C_Cpp.inlayHints.autoDeclarationTypes.showOnLeft": true,
+    "C_Cpp.inlayHints.parameterNames.enabled": true,
+    "C_Cpp.inlayHints.referenceOperator.enabled": true,
+    "C_Cpp.inlayHints.referenceOperator.showSpace": true,
+    "cmake.environment": {},
+    "cmake.debugConfig": {
+        "environment": [
+            {
+                "name": "DISPLAY",
+                "value": ":0.0"
+            },
+            {
+                "name": "CSF_DrawPluginDefaults",
+                "value": "/home/coder/work/OCCT/src/DrawResources"
+            },
+            {
+                "name": "PATH",
+                "value": "${env:PATH}:/home/coder/work/OCCT/build/lin64/clang/libd:/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu/../lib/tcl:/home/coder/work/OCCT/build/lin64/clang/bind:/usr/local/bin:/usr/bin:/bin:"
+            },
+            {
+                "name": "CSF_LANGUAGE",
+                "value": "us"
+            },
+            {
+                "name": "CSF_MIGRATION_TYPES",
+                "value": "/home/coder/work/OCCT/src/StdResource/MigrationSheet.txt"
+            },
+            {
+                "name": "FREETYPE_DIR",
+                "value": "/usr/lib/x86_64-linux-gnu"
+            },
+            {
+                "name": "TBB_DIR",
+                "value": ""
+            },
+            {
+                "name": "CSF_OCCTResourcePath",
+                "value": "/home/coder/work/OCCT/src"
+            },
+            {
+                "name": "CSF_STEPDefaults",
+                "value": "/home/coder/work/OCCT/src/XSTEPResource"
+            },
+            {
+                "name": "CSF_OCCTDocPath",
+                "value": "/home/coder/work/OCCT/doc"
+            },
+            {
+                "name": "DRAWHOME",
+                "value": "/home/coder/work/OCCT/src/DrawResources"
+            },
+            {
+                "name": "CSF_StandardLiteDefaults",
+                "value": "/home/coder/work/OCCT/src/StdResource"
+            },
+            {
+                "name": "CSF_OCCTTestsPath",
+                "value": "/home/coder/work/OCCT/tests"
+            },
+            {
+                "name": "VTK_DIR",
+                "value": ""
+            },
+            {
+                "name": "CSF_OCCTIncludePath",
+                "value": "/home/coder/work/OCCT/build/inc"
+            },
+            {
+                "name": "TCL_VERSION_WITH_DOT",
+                "value": ""
+            },
+            {
+                "name": "CSF_FPE",
+                "value": "0"
+            },
+            {
+                "name": "LD_LIBRARY_PATH",
+                "value": "/home/coder/work/OCCT/build/lin64/clang/libd:/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:"
+            },
+            {
+                "name": "TCL_DIR",
+                "value": "/usr/lib/x86_64-linux-gnu"
+            },
+            {
+                "name": "CSF_ShadersDirectory",
+                "value": "/home/coder/work/OCCT/src/Shaders"
+            },
+            {
+                "name": "CSF_XmlOcafResource",
+                "value": "/home/coder/work/OCCT/src/XmlOcafResource"
+            },
+            {
+                "name": "CSF_SHMessage",
+                "value": "/home/coder/work/OCCT/src/SHMessage"
+            },
+            {
+                "name": "CSF_OCCTSamplesPath",
+                "value": "/home/coder/work/OCCT/samples"
+            },
+            {
+                "name": "CSF_StandardDefaults",
+                "value": "/home/coder/work/OCCT/src/StdResource"
+            },
+            {
+                "name": "CSF_IGESDefaults",
+                "value": "/home/coder/work/OCCT/src/XSTEPResource"
+            },
+            {
+                "name": "CSF_XCAFDefaults",
+                "value": "/home/coder/work/OCCT/src/StdResource"
+            },
+            {
+                "name": "CSF_PluginDefaults",
+                "value": "/home/coder/work/OCCT/src/StdResource"
+            },
+            {
+                "name": "CSF_TObjMessage",
+                "value": "/home/coder/work/OCCT/src/TObj"
+            },
+            {
+                "name": "CASROOT",
+                "value": "/home/coder/work/OCCT"
+            },
+            {
+                "name": "TK_DIR",
+                "value": ""
+            },
+            {
+                "name": "THIRDPARTY_DIR",
+                "value": ""
+            },
+            {
+                "name": "QTDIR",
+                "value": ""
+            },
+            {
+                "name": "CSF_OCCTDataPath",
+                "value": "/home/coder/work/OCCT/data"
+            },
+            {
+                "name": "TCL_LIBRARY",
+                "value": "/usr/lib/x86_64-linux-gnu/../lib/tcl"
+            },
+            {
+                "name": "JEMALLOC_DIR",
+                "value": ""
+            },
+            {
+                "name": "FREEIMAGE_DIR",
+                "value": ""
+            },
+            {
+                "name": "CSF_XSMessage",
+                "value": "/home/coder/work/OCCT/src/XSMessage"
+            },
+            {
+                "name": "MMGT_CLEAR",
+                "value": "1"
+            },
+            {
+                "name": "CSF_TObjDefaults",
+                "value": "/home/coder/work/OCCT/src/StdResource"
+            },
+            {
+                "name": "DRAWDEFAULT",
+                "value": "/home/coder/work/OCCT/src/DrawResources/DrawDefault"
+            }
+        ],
+        "type": "lldb-dap",
+        "request": "launch",
+        "name": "Launch",
+        "program": "${command:cmake.launchTargetPath}",
+        "args": [],
+        "internalConsoleOptions": "neverOpen",
+        "runInTerminal": true,
+        "displayExtendedBacktrace": true,
+        "enableAutoVariableSummaries": true,
+        "enableSyntheticChildDebugging": true,
+        //"initCommands": [ "command script import /home/coder/work/OCCT/.vscode/opencascade_handle_printer.py" ],
+        "env": [
+            "DISPLAY=:0.0",
+            "CSF_DrawPluginDefaults=/home/coder/work/OCCT/src/DrawResources",
+            "PATH=${env:PATH}:/home/coder/work/OCCT/build/lin64/clang/libd:/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu/../lib/tcl:/home/coder/work/OCCT/build/lin64/clang/bind:/usr/local/bin:/usr/bin:/bin:",
+            "CSF_LANGUAGE=us",
+            "CSF_MIGRATION_TYPES=/home/coder/work/OCCT/src/StdResource/MigrationSheet.txt",
+            "FREETYPE_DIR=/usr/lib/x86_64-linux-gnu",
+            "TBB_DIR=",
+            "CSF_OCCTResourcePath=/home/coder/work/OCCT/src",
+            "CSF_STEPDefaults=/home/coder/work/OCCT/src/XSTEPResource",
+            "CSF_OCCTDocPath=/home/coder/work/OCCT/doc",
+            "DRAWHOME=/home/coder/work/OCCT/src/DrawResources",
+            "CSF_StandardLiteDefaults=/home/coder/work/OCCT/src/StdResource",
+            "CSF_OCCTTestsPath=/home/coder/work/OCCT/tests",
+            "VTK_DIR=",
+            "CSF_OCCTIncludePath=/home/coder/work/OCCT/build/inc",
+            "TCL_VERSION_WITH_DOT=",
+            "CSF_FPE=0",
+            "LD_LIBRARY_PATH=/home/coder/work/OCCT/build/lin64/clang/libd:/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:",
+            "TCL_DIR=/usr/lib/x86_64-linux-gnu",
+            "CSF_ShadersDirectory=/home/coder/work/OCCT/src/Shaders",
+            "CSF_XmlOcafResource=/home/coder/work/OCCT/src/XmlOcafResource",
+            "CSF_SHMessage=/home/coder/work/OCCT/src/SHMessage",
+            "CSF_OCCTSamplesPath=/home/coder/work/OCCT/samples",
+            "CSF_StandardDefaults=/home/coder/work/OCCT/src/StdResource",
+            "CSF_IGESDefaults=/home/coder/work/OCCT/src/XSTEPResource",
+            "CSF_XCAFDefaults=/home/coder/work/OCCT/src/StdResource",
+            "CSF_PluginDefaults=/home/coder/work/OCCT/src/StdResource",
+            "CSF_TObjMessage=/home/coder/work/OCCT/src/TObj",
+            "CASROOT=/home/coder/work/OCCT",
+            "TK_DIR=",
+            "THIRDPARTY_DIR=",
+            "QTDIR=",
+            "CSF_OCCTDataPath=/home/coder/work/OCCT/data",
+            "TCL_LIBRARY=/usr/lib/x86_64-linux-gnu/../lib/tcl",
+            "JEMALLOC_DIR=",
+            "FREEIMAGE_DIR=",
+            "CSF_XSMessage=/home/coder/work/OCCT/src/XSMessage",
+            "MMGT_CLEAR=1",
+            "CSF_TObjDefaults=/home/coder/work/OCCT/src/StdResource",
+            "DRAWDEFAULT=/home/coder/work/OCCT/src/DrawResources/DrawDefault"
+        ],
+    },
+    "C_Cpp.debugShortcut": true,
+    "cmake.cmakePath": "/home/coder/work/cmake-3.30.3-linux-x86_64/bin/cmake",
+    "git.allowForcePush": true,
+    "C_Cpp.clang_format_style": "file:/home/coder/work/OCCT/.vscode/.clang-format",
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format-20 ",
+    "clang-format.assumeFilename": "file:/home/coder/work/OCCT/.vscode/.clang-format",
+    "C_Cpp.experimentalFeatures": "enabled",
+    "lldb-dap.executable-path": "/usr/bin/lldb-dap-20",
+    "clangd.path": "/usr/bin/clangd-20",
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.codeAnalysis.clangTidy.path": "/usr/bin/clang-tidy-20",
+    "clang-format.executable": "/usr/bin/clang-format-20",
+    "cmake.skipConfigureIfCachePresent": true,
+    "editor.inlayHints.padding": true,
+    "editor.inlineCompletionsAccessibilityVerbose": true,
+    "clangd.inactiveRegions.useBackgroundHighlight": true,
+    "C_Cpp.codeAnalysis.clangTidy.checks.enabled": [
+        "performance-*",
+        "cppcoreguidelines-*",
+        "misc-*"
+    ],
+    "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
+        "cppcoreguidelines-avoid-magic-numbers",
+        "misc-include-cleaner"
+    ],
+    "cmake.options.advanced": {
+        "build": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "launch": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "debug": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        }
+    }
+}

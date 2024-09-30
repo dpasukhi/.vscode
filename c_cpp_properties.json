@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/src/**"
+            ],
+            "defines": [],
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-clang-x64",
+            "mergeConfigurations": true,
+            "browse": {
+                "databaseFilename": "${workspaceFolder}/build/browse.vc.db",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "compilerPath": "/usr/bin/clang++-20",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}

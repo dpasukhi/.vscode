@@ -1,0 +1,164 @@
+---
+# clang-format configuration file trying to apply OCCT coding style
+# BasedOnStyle: Mozilla
+AccessModifierOffset: -2
+AlignAfterOpenBracket: Align
+#AlignArrayOfStructures: Right
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveDeclarations: true
+AlignConsecutiveMacros: Consecutive
+AlignEscapedNewlines: Left # choosing between left or right
+AlignOperands: AlignAfterOperator
+AlignTrailingComments: true
+AllowAllArgumentsOnNextLine: false
+AllowAllConstructorInitializersOnNextLine: false
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortBlocksOnASingleLine: Never
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: InlineOnly
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLambdasOnASingleLine: None
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false # ?
+AlwaysBreakTemplateDeclarations: Yes
+BinPackArguments: false # ?
+BinPackParameters: false
+BraceWrapping:   
+  AfterCaseLabel:        true
+  AfterClass:            true
+  AfterControlStatement: true
+  AfterEnum:             true
+  AfterFunction:         true
+  AfterNamespace:        true
+  AfterObjCDeclaration:  false
+  AfterStruct:           true
+  AfterUnion:            true
+  AfterExternBlock:      true
+  BeforeCatch:           true
+  BeforeElse:            true
+  BeforeLambdaBody:      true
+  IndentBraces:          false
+  SplitEmptyFunction:    true
+  SplitEmptyRecord:      true
+  SplitEmptyNamespace:   true
+# BreakAfterJavaFieldAnnotations: false
+BreakBeforeBinaryOperators: NonAssignment
+BreakBeforeBraces: Custom
+BreakBeforeInheritanceComma: false
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializers: BeforeColon
+BreakInheritanceList: BeforeColon
+BreakStringLiterals: true # ?
+ColumnLimit: 100
+CommentPragmas: '^ IWYU pragma:' # ?
+CompactNamespaces: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+ConstructorInitializerIndentWidth: 0
+ContinuationIndentWidth: 2
+DeriveLineEnding: true
+DerivePointerAlignment: false # usually
+DisableFormat: false
+#EmptyLineAfterAccessModifier: Leave
+ExperimentalAutoDetectBinPacking: false # experimental
+FixNamespaceComments: false
+ForEachMacros:
+  - foreach
+  - Q_FOREACH
+  - BOOST_FOREACH
+IncludeBlocks: Regroup # ?
+IncludeCategories: # ?
+  - Regex:           '^<stdafx\.h>$|^"stdafx\.h"$'
+    Priority:        -1
+  - Regex:           '^<[a-zA-Z0-9_]+\.hxx>$'
+    Priority:        2010
+  - Regex:           '^<qwt(_[a-z]+)?\.h>$'
+    Priority:        2020
+  - Regex:           '^<Qt[A-Za-z]*(Property|Factory|Browser)[A-Za-z]*>$'
+    Priority:        2030
+  - Regex:           '^<qt[a-z]*(property|factory)[a-z]*\.h>$'
+    Priority:        2030
+  - Regex:           '^<QWebEngine.+>$'
+    Priority:        2040
+  - Regex:           '^<Q[A-Z][a-zA-Z]+>$'
+    Priority:        2050
+    SortPriority:    2052
+  - Regex:           '^<windows\.h>$'
+    Priority:        2060
+  - Regex:           '^<[a-z][a-z_]+>$'
+    Priority:        3000
+  - Regex:           '^<.+>$'
+    Priority:        3010
+  - Regex:           '.*'
+    Priority:        3020
+IncludeIsMainRegex: '' # ?
+IncludeIsMainSourceRegex: '' # ?
+IndentCaseLabels: true
+IndentGotoLabels: true
+IndentPPDirectives: BeforeHash
+IndentWidth: 2
+IndentWrappedFunctionNames: true # ?
+KeepEmptyLinesAtTheStartOfBlocks: false
+MacroBlockBegin: '' # '^(TEST_CLASS|TEST_METHOD)\(^[a-zA-Z][a-zA-Z0-9_]*\)$'
+MacroBlockEnd: '' # '^(};[ \t]*// TEST_CLASS|^}[ \t]*// TEST_METHOD$)$'
+MaxEmptyLinesToKeep: 1
+NamespaceIndentation: All
+# ObjCBinPackProtocolList: Auto
+# ObjCBlockIndentWidth: 4
+# ObjCSpaceAfterProperty: true
+# ObjCSpaceBeforeProtocolList: false
+PenaltyBreakAssignment: 100
+PenaltyBreakBeforeFirstCallParameter: 100 # ?
+PenaltyBreakComment: 300 # ?
+PenaltyBreakFirstLessLess: 120 # ?
+PenaltyBreakString: 1000 # ?
+PenaltyBreakTemplateDeclaration: 10
+PenaltyExcessCharacter: 1000000 # ?
+PenaltyReturnTypeOnItsOwnLine: 200 # ?
+PointerAlignment: Left
+RawStringFormats:
+  - Language: Cpp
+    # Delimiter: 'cpp'
+    BasedOnStyle: Mozilla
+#ReferenceAlignment: Left
+ReflowComments: false
+SortIncludes: true
+SortUsingDeclarations: true
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeParens: ControlStatements
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyBlock: false
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 1
+SpacesInAngles: false
+SpacesInCStyleCastParentheses: false
+# SpacesInConditionalStatement: false # unknown key?
+#SpacesInLineCommentPrefix:
+#  - Minimum: 1
+#  - Maximum: -1
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+StatementMacros:
+  - Standard_FALLTHROUGH
+TabWidth: 2
+TypenameMacros: ['Handle']
+#WhitespaceSensitiveMacros: ['Handle', 'EM_ASM']
+UseCRLF: false
+UseTab: Never
+---
+Language: Cpp
+Cpp11BracedListStyle: true # ?
+SpaceBeforeCpp11BracedList: false
+Standard: c++14
+---
+Language: JavaScript
+JavaScriptQuotes: Leave
+JavaScriptWrapImports: true
+SpacesInContainerLiterals: false

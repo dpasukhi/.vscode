@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb-dap",
+      "request": "attach",
+      "name": "Attach",
+      "pid": "${command:pickProcess}",
+      "program": "${command:cmake.launchTargetPath}",
+      "internalConsoleOptions": "neverOpen",
+      "displayExtendedBacktrace": true,
+      "enableAutoVariableSummaries": true,
+      "enableSyntheticChildDebugging": true,
+      //"initCommands": [ "command script import /home/coder/work/OCCT/.vscode/opencascade_handle_printer.py" ],
+    }
+  ]
+}
