@@ -280,5 +280,9 @@
             "statusBarVisibility": "inherit",
             "inheritDefault": "visible"
         }
+    },
+    "cmake.configureEnvironment": {
+        "CMAKE_CXX_FLAGS_DEBUG": "-g -fno-limit-debug-info -glldb",
+        "CMAKE_C_FLAGS_DEBUG": "-g -fno-limit-debug-info -glldb"
     }
 }
