@@ -1,8 +1,8 @@
 {
     "cmake.launchBehavior": "reuseTerminal",
-    "C_Cpp.intelliSenseEngineFallback": "disabled",
+    "C_Cpp.intelliSenseEngineFallback": "enabled",
     "C_Cpp.default.intelliSenseMode": "linux-clang-x64",
-    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "C_Cpp.intelliSenseEngine": "disabled",
     "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
     "C_Cpp.default.compilerPath": "/usr/bin/clang++-20",
     "files.associations": {
