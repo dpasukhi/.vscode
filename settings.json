@@ -282,7 +282,8 @@
     ],
     "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
         "cppcoreguidelines-avoid-magic-numbers",
-        "misc-include-cleaner"
+        "misc-include-cleaner",
+        "cppcoreguidelines-owning-memory",
     ],
     "cmake.options.advanced": {
         "build": {
