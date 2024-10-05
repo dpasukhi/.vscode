@@ -5,18 +5,18 @@
       "label": "Start DRAWEXE debug",
       "type": "shell",
       "group": "build",
-      "command": "export DISPLAY=\":90.0\"; rlwrap \"${workspaceFolder}/build/draw.sh\" debug"
+      "command": "export DISPLAY=\":90.0\"; export CSF_TestDataPath=\"/mnt/dn29/coder-occt/3rdparty\"; rlwrap \"${workspaceFolder}/build/draw.sh\" debug"
     },
     {
       "label": "Start DRAWEXE release",
       "type": "shell",
-      "command": "export DISPLAY=\":90.0\"; rlwrap \"${workspaceFolder}/build/draw.sh\""
+      "command": "export DISPLAY=\":90.0\"; export CSF_TestDataPath=\"/mnt/dn29/coder-occt/3rdparty\"; rlwrap \"${workspaceFolder}/build/draw.sh\""
     },
     {
       "label": "Start valgrind DRAWEXE debug",
       "type": "shell",
       "group": "build",
-      "command": "export DISPLAY=\":90.0\"; valgrind --leak-check=yes \"${workspaceFolder}/build/draw.sh\" debug"
+      "command": "export DISPLAY=\":90.0\"; export CSF_TestDataPath=\"/mnt/dn29/coder-occt/3rdparty\"; valgrind --leak-check=yes \"${workspaceFolder}/build/draw.sh\" debug"
     },
   ]
 }

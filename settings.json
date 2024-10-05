@@ -38,7 +38,26 @@
         "console": "integratedTerminal",
         "internalConsoleOptions": "neverOpen",
         // USE THIS COMMAND TO START DRAWEXE DEBUG
-        // export DISPLAY=":90.0"; source "/home/coder/work/OCCT/build/env.sh" debug
+        // Command needs to be executed in the terminal that opened after first try to debug or launch
+        // source "/home/coder/work/OCCT/build/env.sh" debug
+        // _
+        // env variables for launch operation
+        "environment": [
+            {
+                "name": "DISPLAY",
+                "value": ":90.0"
+            },
+            {
+                "name": "CSF_TestDataPath",
+                "value": "/mnt/dn29/coder-occt/3rdparty"
+            }
+        ],
+        // env variables for debug operation
+        "env":
+        {
+            "CSF_TestDataPath": "/mnt/dn29/coder-occt/3rdparty",
+            "DISPLAY": ":90.0"
+        }
     },
     "C_Cpp.debugShortcut": true,
     "git.allowForcePush": true,
@@ -96,7 +115,8 @@
     },
     "cmake.configureEnvironment": {
         "CMAKE_CXX_FLAGS_DEBUG": "-g -fno-limit-debug-info -glldb",
-        "CMAKE_C_FLAGS_DEBUG": "-g -fno-limit-debug-info -glldb"
+        "CMAKE_C_FLAGS_DEBUG": "-g -fno-limit-debug-info -glldb",
+        "3RDPARTY_DIR": "/mnt/dn29/coder-occt/3rdparty"
     },
     "cmake.installPrefix": "${workspaceFolder}/install",
 }
