@@ -39,11 +39,29 @@ wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
 sudo ./llvm.sh 20 all
 
-# Add the repository to the sources list
-echo "deb http://ftp.de.debian.org/debian sid main" | sudo tee -a /etc/apt/sources.list
-
-# Update the package list
-sudo apt update
-
-# Install the cmake package
-sudo apt install -y cmake
+# cmake
+if [ -f /etc/lsb-release ]; then
+    # Ubuntu
+    # Add the Kitware APT repository
+    sudo apt-get update
+    sudo apt-get install -y wget gnupg
+    wget -O - https://apt.kitware.com/kitware-archive.sh | sudo bash
+    
+    # Update the package list
+    sudo apt-get update
+    
+    # Install CMake
+    sudo apt-get install -y cmake
+elif [ -f /etc/debian_version ]; then
+    # Debian
+    # Add the repository to the sources list
+    echo "deb http://ftp.de.debian.org/debian sid main" | sudo tee -a /etc/apt/sources.list
+    
+    # Update the package list
+    sudo apt update
+    
+    # Install the cmake package
+    sudo apt install -y cmake
+else
+    echo "Unsupported Debian-based OS"
+fi
