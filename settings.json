@@ -54,10 +54,10 @@
         ],
         // env variables for debug operation
         "env":
-        {
-            "CSF_TestDataPath": "/mnt/dn29/coder-occt/3rdparty",
-            "DISPLAY": ":90.0"
-        }
+        [
+          "CSF_TestDataPath=/mnt/dn29/coder-occt/3rdparty",
+          "DISPLAY=:90.0"
+        ]
     },
     "C_Cpp.debugShortcut": true,
     "git.allowForcePush": true,

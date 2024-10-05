@@ -13,5 +13,29 @@
       "enableAutoVariableSummaries": true,
       "enableSyntheticChildDebugging": true,
     },
+    {
+      "type": "lldb-dap",
+      "request": "launch",
+      "name": "Launch",
+      // PATH TO DRAWEXE
+      // NEEDS TO UPDATE MANUALLY
+      "program": "/home/coder/work/OCCT/build/lin64/clang/bind/DRAWEXE",
+      "args": [],
+      "runInTerminal": true,
+      "displayExtendedBacktrace": true,
+      "enableAutoVariableSummaries": true,
+      "enableSyntheticChildDebugging": true,
+      "internalConsoleOptions": "neverOpen",
+      // USE THIS COMMAND TO START DRAWEXE DEBUG
+      // Command needs to be executed in the terminal that opened after first try to debug or launch
+      // source "/home/coder/work/occt-products/install/bin/env.sh" debug
+      // AFTER THAT YOU CAN LOAD COMPONENTS AND START DEBUGGING
+      // pload -DrawPluginProducts Kinematics
+      "env":
+      [
+        "CSF_TestDataPath=/mnt/dn29/coder-occt/3rdparty",
+        "DISPLAY=:90.0"
+      ]
+    }
   ],
 }
