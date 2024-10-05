@@ -23,7 +23,7 @@
       "enableAutoVariableSummaries": true,
       "enableSyntheticChildDebugging": true,
       "env": [
-        "DISPLAY=:0.0",
+        "DISPLAY=:90.0",
         "CSF_DrawPluginDefaults=/home/coder/work/OCCT/src/DrawResources",
         "PATH=${env:PATH}:/home/coder/work/OCCT/build/lin64/clang/libd:/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu/../lib/tcl:/home/coder/work/OCCT/build/lin64/clang/bind:/usr/local/bin:/usr/bin:/bin:",
         "CSF_LANGUAGE=us",
