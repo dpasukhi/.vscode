@@ -1,14 +1,5 @@
 #!/bin/bash
 
-# Add the repository to the sources list
-echo "deb http://ftp.de.debian.org/debian sid main" | sudo tee -a /etc/apt/sources.list
-
-# Update the package list
-sudo apt update
-
-# Install the cmake package
-sudo apt install -y cmake
-
 # Update repository
 sudo apt update
 
@@ -47,3 +38,12 @@ git config --global user.email "${username}@opencascade.com"
 wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
 sudo ./llvm.sh 20 all
+
+# Add the repository to the sources list
+echo "deb http://ftp.de.debian.org/debian sid main" | sudo tee -a /etc/apt/sources.list
+
+# Update the package list
+sudo apt update
+
+# Install the cmake package
+sudo apt install -y cmake
