@@ -50,7 +50,9 @@ cd ~/work
 
 # Create OCCT directory
 if [ ! -d "$HOME/work/OCCT" ]; then
-  $GIT_SSH_COMMAND clone git@github.com:Open-Cascade-SAS/OCCT.git
+  $GIT_SSH_COMMAND clone "git@github.com:Open-Cascade-SAS/OCCT.git" "$HOME/work/OCCT"
+  $GIT_SSH_COMMAND clone "git@github.com:Open-Cascade-SAS/OCCT.git" "$HOME/work/OCCT"
+  sudo $GIT_SSH_COMMAND clone "git@github.com:Open-Cascade-SAS/OCCT.git" "$HOME/work/OCCT"
   cd "$HOME/work/OCCT"
   git remote add old gitolite@git.dev.opencascade.org:occt
 
