@@ -50,8 +50,8 @@ cd ~/work
 
 # Create OCCT directory
 if [ ! -d "$HOME/work/OCCT" ]; then
-  GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no" git clone git@github.com:Open-Cascade-SAS/OCCT.git
-  git clone git@github.com:Open-Cascade-SAS/OCCT.git
+  sudo GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no" git clone git@github.com:Open-Cascade-SAS/OCCT.git
+  sudo git clone git@github.com:Open-Cascade-SAS/OCCT.git
   cd "$HOME/work/OCCT"
   git remote add old gitolite@git.dev.opencascade.org:occt
 
@@ -63,8 +63,8 @@ fi
 
 # Create PROD directory
 if [ ! -d "$HOME/work/occt-products" ]; then
-  GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no" git clone occ@git.nnov.opencascade.com:occt-products.git
-  git clone occ@git.nnov.opencascade.com:occt-products.git
+  sudo GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no" git clone occ@git.nnov.opencascade.com:occt-products.git
+  sudo git clone occ@git.nnov.opencascade.com:occt-products.git
   cd "$HOME/work/occt-products"
 
   mkdir -p build
