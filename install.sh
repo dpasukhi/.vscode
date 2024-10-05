@@ -39,21 +39,7 @@ wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
 sudo ./llvm.sh 20 all
 
-# cmake
-if [ -f /etc/lsb-release ]; then
-    # Ubuntu
-    # Add the Kitware APT repository
-    sudo apt-get update
-    sudo apt-get install -y wget gnupg
-    wget -O - https://apt.kitware.com/kitware-archive.sh | sudo bash
-    
-    # Update the package list
-    sudo apt-get update
-    
-    # Install CMake
-    sudo apt-get install -y cmake
-elif [ -f /etc/debian_version ]; then
-
-else
-    echo "Unsupported Debian-based OS"
-fi
+# Download and install CMake 3.30.4
+wget https://github.com/Kitware/CMake/releases/download/v3.30.4/cmake-3.30.4-Linux-x86_64.sh
+chmod +x cmake-3.30.4-Linux-x86_64.sh
+sudo ./cmake-3.30.4-Linux-x86_64.sh --prefix=/usr/local --skip-license
