@@ -128,5 +128,17 @@
           "prefix": "00",
           "url": "https://tracker.dev.opencascade.org/view.php?id=<num>"
         }
-      ],
+    ],
+    "cSpell.words": [
+        "Curv",
+        "Extr",
+        "OCCT",
+        "Repr",
+        "RTTIEXT",
+        "Shareds",
+        "Sharings",
+        "Topo",
+        "Trsf",
+        "XCAF"
+    ],
 }
