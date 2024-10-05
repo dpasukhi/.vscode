@@ -119,4 +119,14 @@
         "3RDPARTY_DIR": "/mnt/dn29/coder-occt/3rdparty"
     },
     "cmake.installPrefix": "${workspaceFolder}/install",
+    "gitlens.autolinks": [
+        {
+          "prefix": "#",
+          "url": "https://github.com/Open-Cascade-SAS/OCCT/pull/<num>"
+        },
+        {
+          "prefix": "00",
+          "url": "https://tracker.dev.opencascade.org/view.php?id=<num>"
+        }
+      ],
 }
