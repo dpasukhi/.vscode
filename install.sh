@@ -1,4 +1,14 @@
 #!/bin/bash
+
+# Add the repository to the sources list
+echo "deb http://ftp.de.debian.org/debian sid main" | sudo tee -a /etc/apt/sources.list
+
+# Update the package list
+sudo apt update
+
+# Install the cmake package
+sudo apt install -y cmake
+
 # Update repository
 sudo apt update
 
