@@ -23,7 +23,7 @@ fi
 sudo apt-get install -y valgrind
 
 # boost
-sudo apt-get install -y libboost-dev
+sudo apt-get install -y libboost-dev libtbb-dev
 
 sudo apt install -y nodejs
 
