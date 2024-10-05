@@ -243,7 +243,6 @@
         ],
     },
     "C_Cpp.debugShortcut": true,
-    "cmake.cmakePath": "/home/coder/work/cmake-3.30.3-linux-x86_64/bin/cmake",
     "git.allowForcePush": true,
     "C_Cpp.clang_format_style": "file:/home/coder/work/OCCT/.vscode/.clang-format",
     "C_Cpp.clang_format_path": "/usr/bin/clang-format-20 ",
