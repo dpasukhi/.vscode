@@ -130,15 +130,25 @@
         }
     ],
     "cSpell.words": [
+        "Colgp",
+        "COMPSOLID",
         "Curv",
+        "Datavision",
         "Extr",
+        "IGES",
+        "Matra",
         "OCCT",
+        "pcurve",
+        "pcurves",
+        "Polyline",
         "Repr",
         "RTTIEXT",
         "Shareds",
         "Sharings",
         "Topo",
         "Trsf",
-        "XCAF"
+        "VRML",
+        "XCAF",
+        "XSTEP"
     ],
 }
