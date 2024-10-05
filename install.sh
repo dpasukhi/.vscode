@@ -53,15 +53,7 @@ if [ -f /etc/lsb-release ]; then
     # Install CMake
     sudo apt-get install -y cmake
 elif [ -f /etc/debian_version ]; then
-    # Debian
-    # Add the repository to the sources list
-    echo "deb http://ftp.de.debian.org/debian sid main" | sudo tee -a /etc/apt/sources.list
-    
-    # Update the package list
-    sudo apt update
-    
-    # Install the cmake package
-    sudo apt install -y cmake
+
 else
     echo "Unsupported Debian-based OS"
 fi
