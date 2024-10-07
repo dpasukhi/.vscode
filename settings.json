@@ -116,7 +116,6 @@
     "cmake.configureEnvironment": {
         "CMAKE_CXX_FLAGS_DEBUG": "-g -fno-limit-debug-info -glldb",
         "CMAKE_C_FLAGS_DEBUG": "-g -fno-limit-debug-info -glldb",
-        "3RDPARTY_DIR": "/mnt/dn29/coder-occt/3rdparty"
     },
     "cmake.installPrefix": "${workspaceFolder}/install",
     "gitlens.autolinks": [
