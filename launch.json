@@ -33,7 +33,7 @@
       // pload -DrawPluginProducts Kinematics
       "env":
       [
-        "CSF_TestDataPath=/mnt/dn29/coder-occt/3rdparty",
+        "CSF_TestDataPath=/mnt/dn29/coder-occt/CAD_FILES",
         "DISPLAY=:90.0"
       ]
     }
