@@ -1,11 +1,10 @@
----
 # clang-format configuration file trying to apply OCCT coding style
 # BasedOnStyle: Mozilla
 AccessModifierOffset: -2
 AlignAfterOpenBracket: Align
-AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveAssignments: AcrossEmptyLinesAndComments
 AlignConsecutiveDeclarations: true
-AlignConsecutiveMacros: Consecutive
+AlignConsecutiveMacros: AcrossEmptyLinesAndComments
 AlignEscapedNewlines: Left
 AlignOperands: AlignAfterOperator
 AlignTrailingComments: true
@@ -39,7 +38,7 @@ BraceWrapping:
   BeforeElse: true
   BeforeLambdaBody: true
   IndentBraces: false
-  SplitEmptyFunction: true
+  SplitEmptyFunction: false
   SplitEmptyNamespace: true
   SplitEmptyRecord: true
 BreakBeforeBinaryOperators: NonAssignment
@@ -49,7 +48,7 @@ BreakBeforeTernaryOperators: true
 BreakConstructorInitializers: BeforeColon
 BreakInheritanceList: BeforeColon
 BreakStringLiterals: true
-ColumnLimit: 100
+ColumnLimit: 128
 CommentPragmas: '^ IWYU pragma:'
 CompactNamespaces: false
 ConstructorInitializerAllOnOneLineOrOnePerLine: true
@@ -59,11 +58,13 @@ Cpp11BracedListStyle: true
 DeriveLineEnding: true
 DerivePointerAlignment: false
 DisableFormat: false
+FixNamespaceComments: false
 IndentCaseLabels: true
 IndentGotoLabels: true
 IndentPPDirectives: BeforeHash
 IndentWidth: 2
 IndentWrappedFunctionNames: true
+IncludeBlocks: Preserve
 KeepEmptyLinesAtTheStartOfBlocks: false
 Language: Cpp
 MaxEmptyLinesToKeep: 1
@@ -105,4 +106,3 @@ TabWidth: 2
 TypenameMacros: [Handle]
 UseCRLF: false
 UseTab: Never
----
